@@ -278,7 +278,7 @@ docker compose run --rm horizon [OPTIONS]
 
 ### 4. 自动化（可选）
 
-可使用 **GitHub Actions** 定时运行 Horizon。[每日工作流模板](.github/workflows/daily-summary.yml.disabled) 当前处于禁用状态；根据你的部署配置后，将文件重命名为 `daily-summary.yml` 即可启用。
+可使用 **GitHub Actions** 定时运行 Horizon。[每日工作流](.github/workflows/daily-summary.yml) 已启用，按计划运行，也可通过 `workflow_dispatch` 手动触发。首次运行前请设置仓库密钥 `DEEPSEEK_API_KEY`。
 
 ## 支持的信息源
 
