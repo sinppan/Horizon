@@ -285,7 +285,7 @@ docker compose run --rm horizon [OPTIONS]
 
 ### 4. 自動化（オプション）
 
-**GitHub Actions**でHorizonを定期実行できます。[日次ワークフローのテンプレート](.github/workflows/daily-summary.yml.disabled)は現在無効です。環境に合わせて設定し、`daily-summary.yml`に名前を変更すると有効になります。
+**GitHub Actions**でHorizonを定期実行できます。[日次ワークフロー](.github/workflows/daily-summary.yml)は有効で、スケジュール実行と `workflow_dispatch` による手動実行に対応しています。初回実行前にリポジトリシークレット `DEEPSEEK_API_KEY` を設定してください。
 
 ## サポートされている情報源
 
